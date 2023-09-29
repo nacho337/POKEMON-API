@@ -1,19 +1,21 @@
-import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import React from 'react'; // Make sure you import React
 
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from "./views/home/home.component";
 import Detail from "./views/detail/detail.component";
 import Create from "./views/create/create.component";
-//import "./App.css";
 
 function App() {
   return (
+    
     <BrowserRouter>
-      <Routes>  
-           <Route exact path="/home" component={ <Home />}/>
-           <Route path="/home/:id" component={ <Detail />}/>
-           <Route path="/create" component={ <Create />}/>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/home/:id" element={<Detail />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
+
   );
 }
 
