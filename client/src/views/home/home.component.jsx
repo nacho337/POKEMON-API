@@ -5,7 +5,7 @@ import "./home.styles.css";
 function Home() {
   return (
     <div>
-      <p>Estas en la home page</p>
+      <p>Estas en la home page</p> ///
       <Navbar />
       <Cards />
       </div>
